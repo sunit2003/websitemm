@@ -1,0 +1,10 @@
+/* Default connector line color */
+.MuiStepConnector-line {
+  border-color: #7d7c7c; /* Default to the "active" color */
+  border-top-width: 4px !important; /* Set the thickness */
+}
+
+/* Custom class for completed connectors */
+.stepper .completed .MuiStepConnector-line {
+  border-color: #26a541 !important; /* Completed color */
+}
