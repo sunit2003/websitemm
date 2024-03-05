@@ -22,15 +22,15 @@ const product = {
   ],
   images: [
     {
-      src: "Bracelet/crisscrossscrewbracelet/crisscrossscrew.jpg",
+      src: "https://github.com/sunit2003/MoonMadeDatabase/blob/main/Bracelet/crossed%20roman%20numeral%20bracelet/Third-Picture-6-scaled.jpg?raw=true",
       alt: "braclet",
     },
     {
-      src: "Bracelet/criss cross screw bracelet/Untitled design (1).png",
+      src: "https://github.com/sunit2003/MoonMadeDatabase/blob/main/Bracelet/crossed%20roman%20numeral%20bracelet/Highlight-Pciture-scaled.jpg?raw=true",
       alt: "",
     },
     {
-      src: "Bracelet/criss cross screw bracelet/Untitled design (2).png",
+      src: "https://github.com/sunit2003/MoonMadeDatabase/blob/main/Bracelet/crossed%20roman%20numeral%20bracelet/Fourth-Picture-8-scaled.jpg?raw=true",
       alt: "",
     },
   ],

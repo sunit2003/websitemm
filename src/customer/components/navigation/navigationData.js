@@ -13,7 +13,7 @@ export const navigation = {
             "Models sitting back to back, wearing Basic Tee in black and bone.",
         },
         {
-          name: "Basic Tees",
+          name: "Collection",
           href: "/",
           imageSrc:
             "https://tailwindui.com/img/ecommerce-images/mega-menu-category-02.jpg",
@@ -23,103 +23,102 @@ export const navigation = {
       ],
       sections: [
         {
-          id: "clothing",
+          id: "Rings",
           name: "Clothing",
           items: [
-            { name: "Tops", id: "tops", href: `{women/clothing/tops}` },
-            { name: "Dresses", id: "women_dress", href: "#" },
-            { name: "Women Jeans", id: "women_jeans" },
-            { name: "Lengha Choli", id: "lengha_choli" },
-            { name: "Sweaters", id: "sweater" },
-            { name: "T-Shirts", id: "t-shirt" },
-            { name: "Jackets", id: "jacket" },
-            { name: "Gouns", id: "gouns" },
-            { name: "Sarees", id: "saree" },
-            { name: "Kurtas", id: "kurtas" },
+            { name: "Cartier", id: "tops", href: `{women/clothing/tops}` },
+            { name: "Evil Eye", id: "women_dress", href: "#" },
+            { name: "Roman infinity", id: "women_jeans" },
+            { name: "Infinity studded", id: "lengha_choli" },
+            { name: "Hug ring", id: "sweater" },
+            { name: "Zirconia roman", id: "t-shirt" },
+            { name: "Green stone", id: "jacket" },
+            { name: "Buckel", id: "gouns" },
+            // { name: "Sarees", id: "saree" },
+            // { name: "Kurtas", id: "kurtas" },
           ],
         },
         {
           id: "accessories",
           name: "Accessories",
           items: [
-            { name: "Watches", id: "watch" },
-            { name: "Wallets", id: "wallet" },
-            { name: "Bags", id: "bag" },
-            { name: "Sunglasses", id: "sunglasse" },
-            { name: "Hats", id: "hat" },
-            { name: "Belts", id: "belt" },
+            { name: "Bracelets", id: "watch" },
+            { name: "Rings", id: "wallet" },
+            { name: "Necklace", id: "bag" },
+            { name: "Chains", id: "sunglasse" },
+            { name: "Earings", id: "hat" },
+           
           ],
         },
-        {
-          id: "brands",
-          name: "Brands",
-          items: [
-            { name: "Full Nelson", id: "#" },
-            { name: "My Way", id: "#" },
-            { name: "Re-Arranged", id: "#" },
-            { name: "Counterfeit", id: "#" },
-            { name: "Significant Other", id: "#" },
-          ],
-        },
+        // {
+        //   id: "brands",
+        //   name: "Brands",
+        //   items: [
+        //     { name: "Full Nelson", id: "#" },
+        //     { name: "My Way", id: "#" },
+        //     { name: "Re-Arranged", id: "#" },
+        //     { name: "Counterfeit", id: "#" },
+        //     { name: "Significant Other", id: "#" },
+        //   ],
+        // },
       ],
     },
     {
       id: "men",
       name: "Men",
       featured: [
-        {
-          name: "New Arrivals",
-          id: "#",
-          imageSrc:
-            "https://tailwindui.com/img/ecommerce-images/product-page-04-detail-product-shot-01.jpg",
-          imageAlt:
-            "Drawstring top with elastic loop closure and textured interior padding.",
-        },
-        {
-          name: "Artwork Tees",
-          id: "#",
-          imageSrc:
-            "https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-06.jpg",
-          imageAlt:
-            "Three shirts in gray, white, and blue arranged on table with same line drawing of hands and shapes overlapping on front of shirt.",
-        },
+        // {
+        //   name: "New Arrivals",
+        //   id: "#",
+        //   imageSrc:
+        //     "https://tailwindui.com/img/ecommerce-images/product-page-04-detail-product-shot-01.jpg",
+        //   imageAlt:
+        //     "Drawstring top with elastic loop closure and textured interior padding.",
+        // },
+        // {
+        //   name: "Artwork Tees",
+        //   id: "#",
+        //   imageSrc:
+        //     "https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-06.jpg",
+        //   imageAlt:
+        //     "Three shirts in gray, white, and blue arranged on table with same line drawing of hands and shapes overlapping on front of shirt.",
+        // },
       ],
       sections: [
         {
           id: "clothing",
-          name: "Clothing",
+          name: "Bracelets",
           items: [
-            { name: "Mens Kurtas", id: "mens_kurta" },
-            { name: "Shirt", id: "shirt" },
-            { name: "Men Jeans", id: "men_jeans" },
-            { name: "Sweaters", id: "#" },
-            { name: "T-Shirts", id: "t-shirt" },
-            { name: "Jackets", id: "#" },
-            { name: "Activewear", id: "#" },
+            { name: "Mamba Black", id: "mens_kurta" },
+            { name: "Cuban ", id: "shirt" },
+            { name: "Twisted Infinite", id: "men_jeans" },
+            { name: "Semi Studded", id: "#" },
+            { name: "Gold Shiny", id: "t-shirt" },
+            // { name: "Jackets", id: "#" },
+            // { name: "Activewear", id: "#" },
           ],
         },
         {
           id: "accessories",
           name: "Accessories",
           items: [
-            { name: "Watches", id: "#" },
-            { name: "Wallets", id: "#" },
-            { name: "Bags", id: "#" },
-            { name: "Sunglasses", id: "#" },
-            { name: "Hats", id: "#" },
-            { name: "Belts", id: "#" },
+            { name: "Rings", id: "#" },
+            { name: "Bracelets", id: "#" },
+            { name: "Chains", id: "#" },
+            // { name: "Sunglasses", id: "#" },
+         
           ],
         },
-        {
-          id: "brands",
-          name: "Brands",
-          items: [
-            { name: "Re-Arranged", id: "#" },
-            { name: "Counterfeit", id: "#" },
-            { name: "Full Nelson", id: "#" },
-            { name: "My Way", id: "#" },
-          ],
-        },
+        // {
+        //   id: "brands",
+        //   name: "Brands",
+        //   items: [
+        //     { name: "Re-Arranged", id: "#" },
+        //     { name: "Counterfeit", id: "#" },
+        //     { name: "Full Nelson", id: "#" },
+        //     { name: "My Way", id: "#" },
+          // ],
+        // },
       ],
     },
   ],

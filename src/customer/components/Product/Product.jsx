@@ -48,17 +48,17 @@ export default function Product() {
     const searchParams = new URLSearchParams(location.search);
     let filterValues = searchParams.getAll(sectionId);
     if (filterValues.length > 0 && filterValues[0].split(",").includes(value)) {
-      filterValues = filterValue[0].split(",").filter((item) => item !== value);
-      if (filterValue.length === 0) {
+      filterValues = filterValues[0].split(",").filter((item) => item !== value);
+      if (filterValues.length === 0) {
         searchParams.delete(sectionId);
       }
     } else {
-      filterValue.push(value);
+      filterValues.push(value);
     }
-    if (filterValue.length > 0) {
-      searchParamms.set(sectionId, filterValue.join(","));
+    if (filterValues.length > 0) {
+      searchParams.set(sectionId, filterValues.join(","));
     }
-    const query = searchParamms.toString();
+    const query = searchParams.toString();
     navigate({ search: `?${query}` });
   };
 
