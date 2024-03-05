@@ -1,160 +1,544 @@
 export const RingCards = [
   {
     Image:
-      "Rings/Cartier Love Rings/Cartier RoseGold Ring/il_794xN.4962958576_jdlf.jpg",
-    title: "Cartier Love Ring",
-    detail: "Gold Color",
-    priceafter: "399",
-    pricebefore: "700",
-    discount: "20%",
-    rating: "3.5",
+      "https://github.com/sunit2003/MoonMadeDatabase/blob/main/Rings/Cartier%20Love%20Rings/Cartier%20RoseGold%20Ring/il_794xN.4962958576_jdlf.jpg?raw=true",
+    title: "Cartier Gold",
+    color: "Gold",
+    discountedPrice: 499,
+    price: 1499,
+    rating: 2.5,
+    discountPercent: "66%",
+    size: [
+      {
+        name: "6",
+        quantity: 20,
+      },
+      {
+        name: "7",
+        quantity: 30,
+      },
+      {
+        name: "8",
+        quantity: 50,
+      },
+    ],
+    quantity: 100,
+    topLevelCategory: "Women",
+    secondLevelCategory: "Clothing",
+    thirdLevelCategory: "tops",
+    description:
+      "A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style.",
+  },
+  {
+    Image:
+      "https://github.com/sunit2003/MoonMadeDatabase/blob/main/Rings/Cartier%20Love%20Rings/Cartier%20RoseGold%20Ring/il_794xN.4962958576_jdlf.jpg?raw=true",
+    title: "Cartier Gold",
+    color: "Gold",
+    discountedPrice: 499,
+    price: 1499,
+    rating: 2.5,
+    discountPercent: "66%",
+    size: [
+      {
+        name: "6",
+        quantity: 20,
+      },
+      {
+        name: "7",
+        quantity: 30,
+      },
+      {
+        name: "8",
+        quantity: 50,
+      },
+    ],
+    quantity: 100,
+    topLevelCategory: "Women",
+    secondLevelCategory: "Clothing",
+    thirdLevelCategory: "tops",
+    description:
+      "A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style.",
   },
 
   {
     Image:
-      "Rings/Cartier Love Rings/Cartier RoseGold Ring/il_794xN.4962958576_jdlf.jpg",
-    title: "Cartier Love Ring",
-    detail: "Rose Gold Color",
-    priceafter: "399",
-    pricebefore: "700",
-    discount: "20%",
-    rating: "4.5",
-  },
-  {
-    Image: "Rings/Evil Eye Zircconia Ring/1700913676273.jpg",
-    title: "Evil Eye Ring",
-    detail: "Zircconia Silver",
-    priceafter: "399",
-    pricebefore: "700",
-    discount: "20%",
-    rating: "4.5",
-  },
-
-  {
-    Image: "Rings/Hug Ring/il_794xN.4314555929_jic4.jpg",
-    title: "Faux Pearl",
-    detail: "Ocean Pearl Gold",
-    priceafter: "399",
-    pricebefore: "700",
-    discount: "20%",
-    rating: "4.5",
-  },
-  {
-    Image: "Rings/green stone finger ring/Untitled design (1).png",
-    title: "Green Stone Ring",
-    detail: "Rose Gold",
-    priceafter: "399",
-    pricebefore: "700",
-    discount: "20%",
-    rating: "4.5",
-  },
-  {
-    Image: "Rings/green stone finger ring/Untitled design (3).png",
-    title: "Mine Stone Ring",
-    detail: "Pretty Silver",
-    priceafter: "399",
-    pricebefore: "700",
-    discount: "20%",
-    rating: "4.5",
-  },
-  {
-    Image: "Rings/green stone finger ring/Untitled design (2).png",
-    title: "Twisted Ring",
-    detail: "Golden Twist",
-    priceafter: "399",
-    pricebefore: "&700",
-    discount: "20%",
-    rating: "4.5",
-  },
-  {
-    Image: "Rings/Hug Ring/il_794xN.4314555929_jic4.jpg",
-    title: "Hug Ring",
-    detail: "Gold Color",
-    priceafter: "399",
-    pricebefore: "700",
-    discount: "20%",
-    rating: "4.5",
-  },
-  {
-    Image: "Rings/Infinity studded ring/infinity.png",
-    title: "Infinity Studded Ring",
-    detail: "Glossy Gold",
-    priceafter: "399",
-    pricebefore: "700",
-    discount: "20%",
-    rating: "4.5",
-  },
-  {
-    Image: "Rings/leaves studded ring/Untitled design (13).png",
-    title: "Infinity Studded Ring",
-    detail: "Glossy Gold",
-    priceafter: "399",
-    pricebefore: "700",
-    discount: "20%",
-    rating: "4.5",
-  },
-  {
-    Image: "Rings/Roman zirconia ring/InfinityRomanDiamondRing_c0e9e80.jpg",
-    title: "Infinity Roman diam Ring",
-    detail: "Rose Gold",
-    priceafter: "399",
-    pricebefore: "700",
-    discount: "20%",
-    rating: "4.5",
-  },
-  {
-    Image: "Rings/leaves studded ring/Untitled design (13).png",
-    title: "Infinity Studded Ring",
-    detail: "Glossy Gold",
-    priceafter: "399",
-    pricebefore: "700",
-    discount: "20%",
-    rating: "4.5",
-  },
-  {
-    Image: "Rings/Big Butterfly ring/7119wJxuaUL._AC_UX569_.jpg",
-    title: "Big butterfly Ring",
-    detail: "Glossy Gold",
-    priceafter: "399",
-    pricebefore: "700",
-    discount: "20%",
-    rating: "4.5",
-  },
-  {
-    Image: "Rings/Tennis adj Ring/il_794xN.4331626435_7rdk (1).jpg",
-    title: "Tennis adj Ring",
-    detail: "Glossy Gold",
-    priceafter: "399",
-    pricebefore: "700",
-    discount: "20%",
-    rating: "4.5",
-  },
-  {
-    Image: "Rings/Trio zirconia adjustable ring/il_794xN.2704802910_bz1k.jpg",
-    title: "Trio Zirconia Adj Ring",
-    detail: "Glossy Gold",
-    priceafter: "399",
-    pricebefore: "700",
-    discount: "20%",
-    rating: "4.5",
-  },
-  {
-    Image: "Rings/Twisted infinity ring/infinity.png",
-    title: "Twisted Infinity Ring",
-    detail: "Glossy Gold",
-    priceafter: "399",
-    pricebefore: "700",
-    discount: "20%",
-    rating: "4.5",
+      "https://github.com/sunit2003/MoonMadeDatabase/blob/main/Rings/Evil%20Eye%20Zircconia%20Ring/1700913676270.jpg?raw=trueg",
+    title: "Cartier Gold",
+    color: "Gold",
+    discountedPrice: 499,
+    price: 1499,
+    rating: 2.5,
+    discountPercent: "66%",
+    size: [
+      {
+        name: "6",
+        quantity: 20,
+      },
+      {
+        name: "7",
+        quantity: 30,
+      },
+      {
+        name: "8",
+        quantity: 50,
+      },
+    ],
+    quantity: 100,
+    topLevelCategory: "Women",
+    secondLevelCategory: "Clothing",
+    thirdLevelCategory: "tops",
+    description:
+      "A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style.",
   },
   {
     Image:
-      "Rings/White Stone Ring Set/Group8_9a4b6678-91db-4a63-8160-d9b9c4e09dc5_800x.jpg",
-    title: "WhiteStone Ring Set",
-    detail: "Glossy Gold",
-    priceafter: "399",
-    pricebefore: "700",
-    discount: "20%",
-    rating: "2.5",
+      "https://github.com/sunit2003/MoonMadeDatabase/blob/main/Rings/Evil%20Eye%20Zircconia%20Ring/1700913676273.jpg?raw=true",
+    title: "Cartier Gold",
+    color: "Gold",
+    discountedPrice: 499,
+    price: 1499,
+    rating: 2.5,
+    discountPercent: "66%",
+    size: [
+      {
+        name: "6",
+        quantity: 20,
+      },
+      {
+        name: "7",
+        quantity: 30,
+      },
+      {
+        name: "8",
+        quantity: 50,
+      },
+    ],
+    quantity: 100,
+    topLevelCategory: "Women",
+    secondLevelCategory: "Clothing",
+    thirdLevelCategory: "tops",
+    description:
+      "A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style.",
+  },
+
+  {
+    Image:
+      "https://github.com/sunit2003/MoonMadeDatabase/blob/main/Rings/Cartier%20Love%20Rings/Cartier%20RoseGold%20Ring/rosegold_7765e78b-dbc8-4026-8d69-08882b087264_700x.jpg?raw=true",
+    title: "Cartier Gold",
+    color: "Gold",
+    discountedPrice: 499,
+    price: 1499,
+    rating: 2.5,
+    discountPercent: "66%",
+    size: [
+      {
+        name: "6",
+        quantity: 20,
+      },
+      {
+        name: "7",
+        quantity: 30,
+      },
+      {
+        name: "8",
+        quantity: 50,
+      },
+    ],
+    quantity: 100,
+    topLevelCategory: "Women",
+    secondLevelCategory: "Clothing",
+    thirdLevelCategory: "tops",
+    description:
+      "A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style.",
+  },
+  {
+    Image:
+      "https://github.com/sunit2003/MoonMadeDatabase/blob/main/Rings/Trio%20zirconia%20adjustable%20ring/Copy%20of%20moon%20made%20rings%20(1).jpg?raw=true",
+    title: "Cartier Gold",
+    color: "Gold",
+    discountedPrice: 499,
+    price: 1499,
+    rating: 2.5,
+    discountPercent: "66%",
+    size: [
+      {
+        name: "6",
+        quantity: 20,
+      },
+      {
+        name: "7",
+        quantity: 30,
+      },
+      {
+        name: "8",
+        quantity: 50,
+      },
+    ],
+    quantity: 100,
+    topLevelCategory: "Women",
+    secondLevelCategory: "Clothing",
+    thirdLevelCategory: "tops",
+    description:
+      "A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style.",
+  },
+  {
+    Image:
+      "https://github.com/sunit2003/MoonMadeDatabase/blob/main/Rings/Twisted%20infinity%20ring/infinity%20(2).png?raw=true",
+    title: "Cartier Gold",
+    color: "Gold",
+    discountedPrice: 499,
+    price: 1499,
+    rating: 2.5,
+    discountPercent: "66%",
+    size: [
+      {
+        name: "6",
+        quantity: 20,
+      },
+      {
+        name: "7",
+        quantity: 30,
+      },
+      {
+        name: "8",
+        quantity: 50,
+      },
+    ],
+    quantity: 100,
+    topLevelCategory: "Women",
+    secondLevelCategory: "Clothing",
+    thirdLevelCategory: "tops",
+    description:
+      "A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style.",
+  },
+  {
+    Image:
+      "https://github.com/sunit2003/MoonMadeDatabase/blob/main/Rings/White%20Stone%20Ring%20Set/Group7_f6d91b47-61d1-40d5-a035-be03320450d1_800x.jpg?raw=true",
+    title: "Cartier Gold",
+    color: "Gold",
+    discountedPrice: 499,
+    price: 1499,
+    rating: 2.5,
+    discountPercent: "66%",
+    size: [
+      {
+        name: "6",
+        quantity: 20,
+      },
+      {
+        name: "7",
+        quantity: 30,
+      },
+      {
+        name: "8",
+        quantity: 50,
+      },
+    ],
+    quantity: 100,
+    topLevelCategory: "Women",
+    secondLevelCategory: "Clothing",
+    thirdLevelCategory: "tops",
+    description:
+      "A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style.",
+  },
+  {
+    Image:
+      "https://github.com/sunit2003/MoonMadeDatabase/blob/main/Rings/buckel%20ring/1698140540395.jpg?raw=true",
+    title: "Cartier Gold",
+    color: "Gold",
+    discountedPrice: 499,
+    price: 1499,
+    rating: 2.5,
+    discountPercent: "66%",
+    size: [
+      {
+        name: "6",
+        quantity: 20,
+      },
+      {
+        name: "7",
+        quantity: 30,
+      },
+      {
+        name: "8",
+        quantity: 50,
+      },
+    ],
+    quantity: 100,
+    topLevelCategory: "Women",
+    secondLevelCategory: "Clothing",
+    thirdLevelCategory: "tops",
+    description:
+      "A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style.",
+  },
+  {
+    Image:
+      "https://github.com/sunit2003/MoonMadeDatabase/blob/main/Rings/Evil%20Eye%20Zircconia%20Ring/1700913676273.jpg?raw=true",
+    title: "Cartier Gold",
+    color: "Gold",
+    discountedPrice: 499,
+    price: 1499,
+    rating: 2.5,
+    discountPercent: "66%",
+    size: [
+      {
+        name: "6",
+        quantity: 20,
+      },
+      {
+        name: "7",
+        quantity: 30,
+      },
+      {
+        name: "8",
+        quantity: 50,
+      },
+    ],
+    quantity: 100,
+    topLevelCategory: "Women",
+    secondLevelCategory: "Clothing",
+    thirdLevelCategory: "tops",
+    description:
+      "A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style.",
+  },
+  {
+    Image:
+      "https://github.com/sunit2003/MoonMadeDatabase/blob/main/Rings/Tennis%20adj%20Ring/il_794xN.3541933088_gtjo%20(1).jpg?raw=true",
+    title: "Cartier Gold",
+    color: "Gold",
+    discountedPrice: 499,
+    price: 1499,
+    rating: 2.5,
+    discountPercent: "66%",
+    size: [
+      {
+        name: "6",
+        quantity: 20,
+      },
+      {
+        name: "7",
+        quantity: 30,
+      },
+      {
+        name: "8",
+        quantity: 50,
+      },
+    ],
+    quantity: 100,
+    topLevelCategory: "Women",
+    secondLevelCategory: "Clothing",
+    thirdLevelCategory: "tops",
+    description:
+      "A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style.",
+  },
+  {
+    Image:
+      "https://github.com/sunit2003/MoonMadeDatabase/blob/main/Rings/Roman%20zirconia%20ring/InfinityRomanDiamondRing_c0e9e80.jpg?raw=true",
+    title: "Cartier Gold",
+    color: "Gold",
+    discountedPrice: 499,
+    price: 1499,
+    rating: 2.5,
+    discountPercent: "66%",
+    size: [
+      {
+        name: "6",
+        quantity: 20,
+      },
+      {
+        name: "7",
+        quantity: 30,
+      },
+      {
+        name: "8",
+        quantity: 50,
+      },
+    ],
+    quantity: 100,
+    topLevelCategory: "Women",
+    secondLevelCategory: "Clothing",
+    thirdLevelCategory: "tops",
+    description:
+      "A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style.",
+  },
+  {
+    Image:
+      "https://github.com/sunit2003/MoonMadeDatabase/blob/main/Rings/buckel%20ring/1698140540395.jpg?raw=true",
+    title: "Cartier Gold",
+    color: "Gold",
+    discountedPrice: 499,
+    price: 1499,
+    rating: 2.5,
+    discountPercent: "66%",
+    size: [
+      {
+        name: "6",
+        quantity: 20,
+      },
+      {
+        name: "7",
+        quantity: 30,
+      },
+      {
+        name: "8",
+        quantity: 50,
+      },
+    ],
+    quantity: 100,
+    topLevelCategory: "Women",
+    secondLevelCategory: "Clothing",
+    thirdLevelCategory: "tops",
+    description:
+      "A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style.",
+  },
+  {
+    Image:
+      "https://github.com/sunit2003/MoonMadeDatabase/blob/main/Rings/buckel%20ring/1698140540395.jpg?raw=true",
+    title: "Cartier Gold",
+    color: "Gold",
+    discountedPrice: 499,
+    price: 1499,
+    rating: 2.5,
+    discountPercent: "66%",
+    size: [
+      {
+        name: "6",
+        quantity: 20,
+      },
+      {
+        name: "7",
+        quantity: 30,
+      },
+      {
+        name: "8",
+        quantity: 50,
+      },
+    ],
+    quantity: 100,
+    topLevelCategory: "Women",
+    secondLevelCategory: "Clothing",
+    thirdLevelCategory: "tops",
+    description:
+      "A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style.",
+  },
+  {
+    Image:
+      "https://github.com/sunit2003/MoonMadeDatabase/blob/main/Rings/Big%20Butterfly%20ring/7119wJxuaUL._AC_UX569_.jpg?raw=true",
+    title: "Cartier Gold",
+    color: "Gold",
+    discountedPrice: 499,
+    price: 1499,
+    rating: 2.5,
+    discountPercent: "66%",
+    size: [
+      {
+        name: "6",
+        quantity: 20,
+      },
+      {
+        name: "7",
+        quantity: 30,
+      },
+      {
+        name: "8",
+        quantity: 50,
+      },
+    ],
+    quantity: 100,
+    topLevelCategory: "Women",
+    secondLevelCategory: "Clothing",
+    thirdLevelCategory: "tops",
+    description:
+      "A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style.",
+  },
+  {
+    Image:
+      "https://github.com/sunit2003/MoonMadeDatabase/blob/main/Rings/Tennis%20adj%20Ring/il_794xN.4331626435_7rdk%20(1).jpg?raw=true",
+    title: "Cartier Gold",
+    color: "Gold",
+    discountedPrice: 499,
+    price: 1499,
+    rating: 2.5,
+    discountPercent: "66%",
+    size: [
+      {
+        name: "6",
+        quantity: 20,
+      },
+      {
+        name: "7",
+        quantity: 30,
+      },
+      {
+        name: "8",
+        quantity: 50,
+      },
+    ],
+    quantity: 100,
+    topLevelCategory: "Women",
+    secondLevelCategory: "Clothing",
+    thirdLevelCategory: "tops",
+    description:
+      "A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style.",
+  },
+  {
+    Image:
+      "https://github.com/sunit2003/MoonMadeDatabase/blob/main/Rings/Trio%20zirconia%20adjustable%20ring/il_794xN.2704802910_bz1k.jpg?raw=true",
+    title: "Cartier Gold",
+    color: "Gold",
+    discountedPrice: 499,
+    price: 1499,
+    rating: 2.5,
+    discountPercent: "66%",
+    size: [
+      {
+        name: "6",
+        quantity: 20,
+      },
+      {
+        name: "7",
+        quantity: 30,
+      },
+      {
+        name: "8",
+        quantity: 50,
+      },
+    ],
+    quantity: 100,
+    topLevelCategory: "Women",
+    secondLevelCategory: "Clothing",
+    thirdLevelCategory: "tops",
+    description:
+      "A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style.",
+  },
+  {
+    Image:
+      "https://github.com/sunit2003/MoonMadeDatabase/blob/main/Rings/Butterfly%20ring/IMG_20230519_213057.jpg?raw=true",
+    title: "Cartier Gold",
+    color: "Gold",
+    discountedPrice: 499,
+    price: 1499,
+    rating: 2.5,
+    discountPercent: "66%",
+    size: [
+      {
+        name: "6",
+        quantity: 20,
+      },
+      {
+        name: "7",
+        quantity: 30,
+      },
+      {
+        name: "8",
+        quantity: 50,
+      },
+    ],
+    quantity: 100,
+    topLevelCategory: "Women",
+    secondLevelCategory: "Clothing",
+    thirdLevelCategory: "tops",
+    description:
+      "A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style.",
   },
 ];
