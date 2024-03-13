@@ -126,4 +126,4 @@ export const navigation = {
     { name: "Company", id: "/" },
     { name: "Stores", id: "/" },
   ],
-};
+}

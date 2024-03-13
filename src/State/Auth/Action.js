@@ -63,7 +63,7 @@ export const getUser = () => async (dispatch) => {
   try {
     const response = await axios.get(`${API_BASE_URL}/api/users/profile`, {
       headers: {
-        " Authorization": `Bearer ${token}`,
+        " Authorization": `Bearer${token}`,
       },
     });
     const user = response.data;

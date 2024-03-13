@@ -392,7 +392,6 @@ export default function Navigation() {
                           cursor: "pointer",
                         }}
                       >
-                        {/* {auth.user?.firstName} */}
                         <PersonOutlineIcon sx={{ color: "black" }} />
                       </Avatar>
                       <Menu
