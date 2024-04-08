@@ -1,4 +1,4 @@
-import { api } from "../../config/apiConfig";
+import { api } from "../../config/apiConfig.js";
 import {
   FIND_PRODUCTS_BY_CATEGORY_FAILURE,
   FIND_PRODUCTS_BY_CATEGORY_REQUEST,
@@ -11,22 +11,22 @@ import {
 export const findProducts = (reqData) => async (dispatch) => {
   dispatch({ type: FIND_PRODUCTS_BY_CATEGORY_REQUEST });
   const {
-    colors,
+    color,
     sizes,
     minPrice,
     maxPrice,
     minDiscount,
     category,
-    stock,
-    sort,
+    // stock,
+    // sort,
     pageNumber,
     pageSize,
   } = reqData;
   try {
     const { data } = await api.get(
-      `/api/products?color=${colors}&size=${sizes}&minPrice=${minPrice}&maxPrice=${maxPrice}&minDiscount=${minDiscount}&category=${category}&stock=${stock}&sort=${sort}&pageNumber=${pageNumber}&pageSize=${pageSize}`
+      `/api/products?color=${color}&size=${sizes}&minPrice=${minPrice}&maxPrice=${maxPrice}&minDiscount=${minDiscount}&category=${category}&pageNumber=${pageNumber}&pageSize=${pageSize}`
     );
-    console.log("product data", data);
+    // console.log("product data", data);
     dispatch({ type: FIND_PRODUCTS_BY_CATEGORY_SUCCESS, payload: data });
   } catch (error) {
     dispatch({
@@ -36,11 +36,13 @@ export const findProducts = (reqData) => async (dispatch) => {
   }
 };
 
-export const findProductsById = (reqData) => async (dispatch) => {
+export const findProductById = (reqData) => async (dispatch) => {
   dispatch({ type: FIND_PRODUCT_BY_ID_REQUEST });
-  // const { productId } = reqData;
+  const { productId } = reqData;
+  // const token = localStorage.getItem("token");
   try {
-    const { data } = await api.get(`/api/products/id/${reqData.productId}`);
+    const { data } = await api.get(`/api/products/id/${productId}`);
+
     dispatch({ type: FIND_PRODUCT_BY_ID_SUCCESS, payload: data });
   } catch (error) {
     dispatch({ type: FIND_PRODUCT_BY_ID_FAILURE, payload: error.message });

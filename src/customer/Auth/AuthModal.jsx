@@ -32,7 +32,11 @@ const AuthModal = ({ handleClose, open }) => {
         // className="backdrop-blur-sm"
       >
         <Box sx={style}>
-          {location.pathname === "/login" ? <LoginForm /> : <RegisterForm />}
+          {location.pathname === "/login" ? (
+            <LoginForm handleClose={handleClose} />
+          ) : (
+            <RegisterForm />
+          )}
         </Box>
       </Modal>
     </div>

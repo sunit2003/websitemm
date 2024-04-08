@@ -8,10 +8,15 @@ import "./ProductCard.css";
 import { useNavigate } from "react-router-dom";
 
 const ProductCard = ({ product }) => {
+  // const handleNavigate = () => {
+  //   window.location.href = `/Product/${product._id}`;
+  // };
   const navigate = useNavigate();
+
   return (
     <div
-      onClick={() => navigate(`/Product/${5}`)}
+      onClick={() => navigate(`/Product/${product._id}`)}
+      // onClick={handleNavigate}
       className="productCard w-[16rem] m-3 transition-all bg-white cursor-pointer rounded-lg"
     >
       <div>
@@ -29,7 +34,7 @@ const ProductCard = ({ product }) => {
         <div className="">
           <Rating
             name="read-only"
-            value={product.rating}
+            value={product.numRatings}
             precision={0.5}
             readOnly
           />
@@ -46,7 +51,7 @@ const ProductCard = ({ product }) => {
         </div>
 
         <span className="px-3 text-white bg-orange-400 pb-1 rounded-xl">
-          {product.discountPercent}
+          {product.discountPercent} %
         </span>
       </div>
     </div>

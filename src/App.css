@@ -6,6 +6,15 @@
   height: 40vmin;
   pointer-events: none;
 }
+body {
+  margin: 0;
+}
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Use the full height of the viewport */
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

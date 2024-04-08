@@ -6,14 +6,17 @@ import {
   ShoppingBagIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
+import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import { Avatar, Button, Menu, MenuItem } from "@mui/material";
 import { navigation } from "./navigationData";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import { useLocation, useNavigate } from "react-router-dom";
 import AuthModal from "../../Auth/AuthModal";
-import PersonIcon from "@mui/icons-material/Person";
+// import PersonIcon from "@mui/icons-material/Person";
+import PermIdentityIcon from "@mui/icons-material/PermIdentity";
 import { useDispatch, useSelector } from "react-redux";
 import { getUser, logout } from "../../../State/Auth/Action";
+import Marquee from "react-fast-marquee";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -171,7 +174,7 @@ export default function Navigation() {
                             >
                               {section.name}
                             </p>
-                            {/* eslint-disable-next-line jsx-a11y/no-redundant-roles */}
+
                             <ul
                               role="list"
                               aria-labelledby={`${category.id}-${section.id}-heading-mobile`}
@@ -222,9 +225,16 @@ export default function Navigation() {
       </Transition.Root>
 
       <header className="relative bg-white">
-        <p className="flex h-10 items-center justify-center bg-[#8b7a67] px-4 text-sm font-medium text-white sm:px-6 lg:px-8">
-          Get free delivery on orders over &#8377;499
-        </p>
+        <div className="bg-black">
+          <Marquee speed={100}>
+            <div className="flex h-10 items-center justify-center bg-black px-4 text-sm font-medium text-white sm:px-6 lg:px-8 ">
+              Get free delivery on orders over &#8377;499
+            </div>
+            <div className="flex h-10 items-center justify-center bg-black px-4 text-sm font-medium text-white sm:px-6 lg:px-[500px]">
+              Get free delivery on orders over &#8377;499
+            </div>
+          </Marquee>
+        </div>
 
         <nav aria-label="Top" className="mx-auto">
           <div className="border-b border-gray-200">
@@ -241,7 +251,11 @@ export default function Navigation() {
               {/* Logo */}
               <div className="ml-4 flex lg:ml-0">
                 <span className="sr-only">MoonMade</span>
-                <img src="logo.png" alt="MOONMADE" className="h-12 w-30 mr-2" />
+                <img
+                  src="https://github.com/sunit2003/websitemm/blob/main/public/logo.png?raw=true"
+                  alt="MOONMADE"
+                  className="h-12 w-30 mr-2"
+                />
               </div>
 
               {/* Flyout menus */}
@@ -255,9 +269,14 @@ export default function Navigation() {
                             <Popover.Button
                               className={classNames(
                                 open
-                                  ? "border-indigo-600 text-indigo-600"
-                                  : "border-transparent text-gray-700 hover:text-gray-800",
-                                "relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out"
+                                  ? "text-indigo-600"
+                                  : "text-gray-700 hover:text-gray-800",
+                                "relative z-10 -mb-px flex items-center pt-px text-sm font-medium transition-colors duration-200 ease-out focus:outline-none focus:ring-none focus:ring-none",
+
+                                "border-none"
+
+                                //   : "border-transparent text-gray-700 hover:text-gray-800",
+                                // "relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out"
                               )}
                             >
                               {category.name}
@@ -274,48 +293,15 @@ export default function Navigation() {
                             leaveTo="opacity-0"
                           >
                             <Popover.Panel className="absolute inset-x-0 top-full text-sm text-gray-500">
-                              {/* Presentational element used to render the bottom shadow, if we put the shadow on the actual panel it pokes out the top, so we use this shorter element to hide the top of the shadow */}
                               <div
                                 className="absolute inset-0 top-1/2 bg-white shadow"
                                 aria-hidden="true"
                               />
 
-                              <div className="relative bg-white">
-                                <div className="mx-auto max-w-7xl px-8">
-                                  <div className="grid grid-cols-2 gap-x-8 gap-y-10 py-16">
-                                    <div className="col-start-2 grid grid-cols-2 gap-x-8">
-                                      {category.featured.map((item) => (
-                                        <div
-                                          key={item.name}
-                                          className="group relative text-base sm:text-sm"
-                                        >
-                                          <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
-                                            <img
-                                              src={item.imageSrc}
-                                              alt={item.imageAlt}
-                                              className="object-cover object-center"
-                                            />
-                                          </div>
-                                          <a
-                                            href={item.href}
-                                            className="mt-6 block font-medium text-gray-900"
-                                          >
-                                            <span
-                                              className="absolute inset-0 z-10"
-                                              aria-hidden="true"
-                                            />
-                                            {item.name}
-                                          </a>
-                                          <p
-                                            aria-hidden="true"
-                                            className="mt-1"
-                                          >
-                                            Shop now
-                                          </p>
-                                        </div>
-                                      ))}
-                                    </div>
-                                    <div className="row-start-1 grid grid-cols-3 gap-x-8 gap-y-10 text-sm">
+                              <div className="absolute">
+                                <div className="px-8 ml-72 bg-white">
+                                  <div className="gap-x-8 pt-5 pb-10 w-40 ">
+                                    <div className="gap-x-8 gap-y-10 text-sm">
                                       {category.sections.map((section) => (
                                         <div key={section.name}>
                                           <p
@@ -328,7 +314,7 @@ export default function Navigation() {
                                           <ul
                                             role="list"
                                             aria-labelledby={`${section.name}-heading`}
-                                            className="mt-6 space-y-6 sm:mt-4 sm:space-y-4"
+                                            className="mt-6 space-y-10 sm:mt-4 sm:space-y-4"
                                           >
                                             {section.items.map((item) => (
                                               <li
@@ -344,9 +330,14 @@ export default function Navigation() {
                                                       close
                                                     )
                                                   }
-                                                  className="cursor-pointer hover:text-gray-800"
+                                                  className="cursor-pointer hover:text-gray-800 border-b-4"
                                                 >
                                                   {item.name}
+                                                  {
+                                                    <NavigateNextIcon
+                                                      sx={{ color: "black" }}
+                                                    />
+                                                  }
                                                 </p>
                                               </li>
                                             ))}
@@ -387,11 +378,12 @@ export default function Navigation() {
                         aria-haspopup="true"
                         aria-expanded={open ? "true" : undefined}
                         sx={{
-                          bgcolor: "gray",
+                          bgcolor: "#E5E1DA",
                           color: "black",
                           cursor: "pointer",
                         }}
                       >
+                        {/* {auth.user?.firstName} */}
                         <PersonOutlineIcon sx={{ color: "black" }} />
                       </Avatar>
                       <Menu
@@ -404,7 +396,7 @@ export default function Navigation() {
                         }}
                       >
                         <MenuItem onClick={handleCloseUserMenu}>
-                          Profile
+                          profile
                         </MenuItem>
 
                         <MenuItem onClick={() => navigate("/account/order")}>
@@ -414,22 +406,31 @@ export default function Navigation() {
                       </Menu>
                     </div>
                   ) : (
-                    <Button
+                    <PermIdentityIcon
                       onClick={handleOpen}
-                      className="text-sm font-medium text-gray-700 hover:text-gray-800"
-                      endIcon={<PersonIcon />}
-                      sx={{
-                        borderRadius: "2rem",
-                        border: "solid 1px",
-                        color: "white",
-                        background: "#8b7a67",
-                        paddingX: "1.5rem",
-                        paddingY: "0.6rem",
-                        ":hover": { color: "#8b7a67", background: "white" },
-                      }}
+                      className="cursor-pointer text-xl text-gray-700
+                      hover:text-gray-800"
+                      sx={{ fontSize: 28 }}
+                      // startIcon={
+                      //   <PermIdentityIcon
+                      //     fontSize="small"
+                      //     sx={{ fontSize: 70 }}
+                      //   />
+                      // }
                     >
-                      Register
-                    </Button>
+                      {
+                        // {
+                        //   borderRadius: "2rem",
+                        //   border: "solid 1px",
+                        //   color: "black",
+                        //   background: "#8b7a67",
+                        //   paddingX: "1.5rem",
+                        //   paddingY: "0.6rem",
+                        //   ":hover": { color: "#8b7a67", background: "black" },
+                        // }
+                      }
+                      {/* Register */}
+                    </PermIdentityIcon>
                   )}
                 </div>
 

@@ -14,10 +14,10 @@ export const filters = [
     id: "size",
     name: "Size",
     options: [
-      { value: "6", label: "6" },
-      { value: "7", label: "7" },
-      { value: "8", label: "8" },
-      { value: "9", label: "9" },
+      { value: "s", label: "S" },
+      { value: "m", label: "M" },
+      { value: "l", label: "L" },
+      { value: "xl", label: "XL" },
     ],
   },
   // {
@@ -66,7 +66,7 @@ export const filters = [
 ];
 
 export const sortOptions = [
-  { name: "Price: Low to High", query: "price_low", current: false },
+  { name: "Price: Low to High", query: "price_low", current: true },
   { name: "Price: High to Low", query: "price_high", current: false },
   // { name: "Most Popular", href: "#", current: true },
   // { name: "Newest", href: "#", current: false },

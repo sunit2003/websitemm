@@ -9,7 +9,7 @@ import { useLocation } from "react-router-dom";
 import DeliveryAddressForm from "./DeliveryAddressForm";
 import OrderSummary from "./OrderSummary";
 
-const steps = ["Loign", "Add Address", "Order Summary", "Payment"];
+const steps = ["Loign", "Delivery Address", "Order Summary", "Payment"];
 
 export default function Checkout() {
   const [activeStep, setActiveStep] = React.useState(0);
@@ -30,14 +30,24 @@ export default function Checkout() {
     <div className="px-10 py-5 lg:py-10 lg:px-20 ">
       {" "}
       <Box sx={{ width: "100%" }}>
-        <Stepper activeStep={step}>
+        <Stepper
+          activeStep={step}
+          className="greenStepper"
+          sx={{
+            "& .MuiStepIcon-root.Mui-active": { color: "gray" }, // Active step icon
+            "& .MuiStepIcon-root.Mui-completed": { color: "black" }, // Completed step icon
+            "& .MuiStepConnector-line": { borderColor: "#3D3B40" }, // Connector lines
+          }}
+        >
           {steps.map((label, index) => {
             const stepProps = {};
             const labelProps = {};
 
             return (
               <Step key={label} {...stepProps}>
-                <StepLabel {...labelProps}>{label}</StepLabel>
+                <StepLabel sx={{ color: "black" }} {...labelProps}>
+                  {label}
+                </StepLabel>
               </Step>
             );
           })}

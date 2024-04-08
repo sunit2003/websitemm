@@ -30,6 +30,7 @@ export const register = (userData) => async (dispatch) => {
     }
     console.log("user", user);
     dispatch(registerSuccess(user.jwt));
+    window.location.reload();
   } catch (error) {
     dispatch(registerFailure(error.message));
   }
@@ -47,8 +48,10 @@ export const login = (userData) => async (dispatch) => {
     if (user.jwt) {
       localStorage.setItem("jwt", user.jwt);
     }
-    console.log("user", user);
+
     dispatch(loginSuccess(user.jwt));
+    window.location.reload();
+    console.log("user", user);
   } catch (error) {
     dispatch(loginFailure(error.message));
   }
@@ -63,11 +66,11 @@ export const getUser = () => async (dispatch) => {
   try {
     const response = await axios.get(`${API_BASE_URL}/api/users/profile`, {
       headers: {
-        " Authorization": `Bearer${token}`,
+        " Authorization": `Bearer ${token}`,
       },
     });
     const user = response.data;
-    console.log("user", user);
+    // console.log("user", user);
     dispatch(getUserSuccess(user));
   } catch (error) {
     dispatch(getUserFailure(error.message));
@@ -77,4 +80,5 @@ export const getUser = () => async (dispatch) => {
 export const logout = () => (dispatch) => {
   dispatch({ type: LOGOUT, payload: null });
   localStorage.clear();
+  window.location.reload();
 };

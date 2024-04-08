@@ -49,27 +49,27 @@ const Footer = () => {
             SHOP OUR PRODUCTS
           </h3>
           <div>
-            <Button className="pb-2" variant="h6" gutterBottom>
+            <Button className="pb-2" variant="h6" gutterbuttom>
               SHOP
             </Button>
           </div>
           <div>
-            <Button className="pb-5" variant="h6" gutterBottom>
+            <Button className="pb-5" variant="h6" gutterbuttom>
               GIFTS
             </Button>
           </div>
           <div>
-            <Button className="bestseller" variant="h6" gutterBottom>
+            <Button className="bestseller" variant="h6" gutterbuttom>
               BEST SELLER
             </Button>
           </div>
           <div>
-            <Button className="pb-5" variant="h6" gutterBottom>
+            <Button className="pb-5" variant="h6" gutterbuttom>
               MEN
             </Button>
           </div>
           <div>
-            <Button className="pb-5" variant="h6" gutterBottom>
+            <Button className="pb-5" variant="h6" gutterbuttom>
               WOMEN
             </Button>
           </div>
@@ -80,27 +80,27 @@ const Footer = () => {
             USEFUL LINKS
           </h3>
           <div>
-            <Button className="text-start" variant="h6" gutterBottom>
+            <Button className="text-start" variant="h6" gutterbuttom>
               SEARCH
             </Button>
           </div>
           <div>
-            <Button className="pb-5" variant="h6" gutterBottom>
+            <Button className="pb-5" variant="h6" gutterbuttom>
               TRACK YOUR ORDER
             </Button>
           </div>
           <div>
-            <Button className="pb-5" variant="h6" gutterBottom>
+            <Button className="pb-5" variant="h6" gutterbuttom>
               About Us
             </Button>
           </div>
           <div>
-            <Button className="pb-5" variant="h6" gutterBottom>
+            <Button className="pb-5" variant="h6" gutterbuttom>
               Terms of Service
             </Button>
           </div>
           <div>
-            <Button className="pb-5" variant="h6" gutterBottom>
+            <Button className="pb-5" variant="h6" gutterbuttom>
               Refund Policy
             </Button>
           </div>

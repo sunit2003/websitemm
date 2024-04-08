@@ -1,25 +1,72 @@
-// import logo from "./logo.svg";
-import { Route, Routes } from "react-router-dom";
-import "./App.css";
-// import Cart from "./customer/components/Cart/Cart";
-// import Checkout from "./customer/components/Checkout/Checkout";
-// import Footer from "./customer/components/Footer/Footer";
-// import Order from "./customer/components/Order/Order";
-// import OrderDetails from "./customer/components/Order/OrderDetails";
-// import MenSection from "./customer/components/HomeCategory/MenSection";
-// import WomenSection from "./customer/components/HomeCategory/WomenSection";
-// import Product from "./customer/components/Product/Product";
-// import ProductDetails from "./customer/components/ProductDetails/ProductDetails";
-// import Navigation from "./customer/components/navigation/Navigation";
+// import { Route, Routes } from "react-router-dom";
+// import "./App.css";
+// import React, { useState, useEffect } from "react";
+// import RotateLoader from "react-spinners/RotateLoader";
+// import CustomerRouters from "./Routers/CustomerRouters";
+// import { margin } from "@mui/system";
+
+// function App() {
+//   const [loading, setLoading] = useState(false);
+//   useEffect(() => {
+//     setLoading(true);
+//     setTimeout(() => {
+//       setLoading(false);
+//     }, 4000);
+//   }, []);
+
+//   return (
+//     <div className="">
+//       {loading ? (
+//         <RotateLoader
+//           // style={{ padding: "100px" }}
+//           color="#36d7b7"
+//           loading={loading}
+//           size={20}
+//           margin={50}
+//         />
+//       ) : (
+//         <Routes>
+//           <Route path="/*" element={<CustomerRouters />}></Route>
+//         </Routes>
+//       )}
+//     </div>
+//   );
+// }
+
+// export default App;
+
+import React, { useState, useEffect } from "react";
+import RotateLoader from "react-spinners/RotateLoader";
 import CustomerRouters from "./Routers/CustomerRouters";
-// import HomePage from "./customer/pages/HomePage/HomePage";
+import "./App.css"; // Ensure this is imported to apply your styles
+import { Route, Routes } from "react-router-dom";
 
 function App() {
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1500);
+  }, []);
+
   return (
     <div className="">
-      <Routes>
-        <Route path="/*" element={<CustomerRouters />}></Route>
-      </Routes>
+      {loading ? (
+        <div className="loader-container">
+          <RotateLoader
+            color="#3C2A21"
+            loading={loading}
+            size={20}
+            margin={30} // Adjusted to a more common value, change as needed
+          />
+        </div>
+      ) : (
+        <Routes>
+          <Route path="/*" element={<CustomerRouters />}></Route>
+        </Routes>
+      )}
     </div>
   );
 }

@@ -1,19 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import CartItems from "./CartItems";
 import { useNavigate } from "react-router-dom";
-// import { Button } from "@mui/material";
+import { useDispatch, useSelector } from "react-redux";
+import { getCart } from "../../../State/Cart/Action";
+import { store } from "../../../State/store";
 
 const Cart = () => {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const { cart } = useSelector((store) => store);
   const handleCheckout = () => {
     navigate("/checkout?step=2");
   };
+
+  useEffect(() => {
+    dispatch(getCart());
+  }, [cart.updateCartItem, cart.deleteCartItem]);
   return (
     <div>
       <div className="lg:grid grid-cols-3 pt-5 lg:px-16 relative">
         <div className="col-span-2">
-          {[1, 1, 1].map((item) => (
-            <CartItems />
+          {cart.cart?.cartItems.map((item) => (
+            <CartItems item={item} />
           ))}
         </div>
         <div className="px-5 sticky top-0 h-[100vh] mt-8 lg:mt-0">
@@ -21,13 +29,17 @@ const Cart = () => {
             <p className="uppercase opacity-70 text-gray-900 text-center font-sans font-semibold lg:text-lg pt-4 text-md pb-3">
               Price Details
             </p>{" "}
-            <hr class="my-2 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-gray-300 to-transparent opacity-80 dark:text-opacity-100" />
+            <hr className="my-2 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-gray-300 to-transparent opacity-80 dark:text-opacity-100" />
             <div className="space-y-3">
-              <div className="flex justify-between pt-3 px-5 py-2 lg:text-lg text-black">
-                <span>Price (1 item)</span>
-                <span>₹499</span>
+              <div className="flex justify-between px-5 py-2 lg:text-lg text-black">
+                <span>Price</span>
+                <span>₹{cart.cart?.totalPrice}</span>
               </div>
-              <div className="flex justify-between px-5 pb-3 text-black">
+              <div className="flex justify-between py-2 px-5 lg:text-lg text-black">
+                <span>Discount</span>
+                <span>-₹{cart.cart?.discount}</span>
+              </div>
+              <div className="flex justify-between py-2 px-5 pb-3 text-black">
                 <span>Delivery Charges :</span>
                 <div>
                   <span className="line-through px-2 opacity-55 text-md font-sans">
@@ -40,12 +52,14 @@ const Cart = () => {
               <div className="px-4 lg:pb-5 border-b border-solid py-2 border-gray-300">
                 <div className="flex justify-between px-1 pt-2 border-t font-semibold border-gray-300 border-dashed text-black">
                   <span className="lg:text-xl text-lg">Total Payable</span>
-                  <span className="lg:text-xl text-lg font-sans">₹549</span>
+                  <span className="lg:text-xl text-lg font-sans">
+                    ₹{cart.cart?.totalDiscountedPrice}
+                  </span>
                 </div>
               </div>
               <div className="flex flex-row px-5 pb-3 text-md font-semibold text-[#388e3c]">
                 <span>Your Total Savings on this order</span>
-                <span className="px-1"> ₹300</span>
+                <span className="px-1">₹{cart.cart?.discount}</span>
               </div>
               <div></div>
             </div>

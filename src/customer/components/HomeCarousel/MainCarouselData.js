@@ -5,7 +5,7 @@ export const MainCarouselData = [
   {
     Image: "bannerhim.png",
   },
-  {
-    Image: "bannerval.png",
-  },
+  // {
+  //   Image: "bannerval.png",
+  // },
 ];
