@@ -40,9 +40,9 @@ import "react-alice-carousel/lib/alice-carousel.css";
 
 const MainCarousel = () => {
   const items = MainCarouselData.map((item, index) => (
-    <div key={index} className="relative h-full w-full">
+    <div key={index} className="relative h-auto w-full">
       <img
-        className="cursor-pointer object-cover lg:h-full lg:w-full sm:h-80" // Ensuring images cover their containers
+        className="cursor-pointer object-cover h-auto lg:w-full" // Ensuring images cover their containers
         src={item.Image}
         alt={item.Description || "Jewelry item"}
       />
