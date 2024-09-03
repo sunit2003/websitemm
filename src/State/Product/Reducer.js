@@ -49,6 +49,7 @@ import {
   FIND_PRODUCT_BY_ID_REQUEST,
   FIND_PRODUCT_BY_ID_SUCCESS,
   FIND_PRODUCT_BY_ID_FAILURE,
+  DELETE_PRODUCT_SUCCESS,
 } from "./ActionType";
 
 const initialState = {
@@ -70,6 +71,13 @@ export const customerProductReducer = (state = initialState, action) => {
       return { ...state, loading: true, error: null };
     case FIND_PRODUCT_BY_ID_SUCCESS:
       return { ...state, product: action.payload, loading: false };
+    case DELETE_PRODUCT_SUCCESS:
+      return {
+        ...state,
+        loading: false,
+        error: null,
+        deletedProduct: action.payload,
+      };
     case FIND_PRODUCT_BY_ID_FAILURE:
       return { ...state, loading: false, error: action.payload };
 
@@ -77,5 +85,3 @@ export const customerProductReducer = (state = initialState, action) => {
       return state;
   }
 };
-
-// export default customerProductReducer;

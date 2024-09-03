@@ -1,4 +1,4 @@
-import axios from "axios";
+// import axios from "axios";
 import {
   CREATE_ORDER_FAILURE,
   CREATE_ORDER_REQUEST,
@@ -45,7 +45,7 @@ export const getOrderById = (orderId) => async (dispatch) => {
     console.log("catch ", error);
     dispatch({
       type: GET_ORDER_BY_ID_FAILURE,
-      payload: error.messsage,
+      payload: error.message,
     });
   }
 };

@@ -1,22 +1,14 @@
-// import { SvgIcon } from "@mui/material";
 import React from "react";
-// import StarIcon from "@mui/icons-material/Star";
-// import StarHalfIcon from "@mui/icons-material/StarHalf";
-// import { yellow } from "@mui/material/colors";
 import { Rating } from "@mui/material";
 import "./ProductCard.css";
 import { useNavigate } from "react-router-dom";
 
 const ProductCard = ({ product }) => {
-  // const handleNavigate = () => {
-  //   window.location.href = `/Product/${product._id}`;
-  // };
   const navigate = useNavigate();
 
   return (
     <div
       onClick={() => navigate(`/Product/${product._id}`)}
-      // onClick={handleNavigate}
       className="productCard w-[16rem] m-3 transition-all bg-white cursor-pointer rounded-lg"
     >
       <div>

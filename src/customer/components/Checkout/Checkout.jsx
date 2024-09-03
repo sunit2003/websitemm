@@ -27,10 +27,10 @@ export default function Checkout() {
   };
 
   return (
-    <div className="px-10 py-5 lg:py-10 lg:px-20 ">
+    <div className="px-8 py-5 lg:py-10 lg:px-60 ">
       {" "}
       <Box sx={{ width: "100%" }}>
-        <Stepper
+        {/* <Stepper
           activeStep={step}
           className="greenStepper"
           sx={{
@@ -51,7 +51,7 @@ export default function Checkout() {
               </Step>
             );
           })}
-        </Stepper>
+        </Stepper> */}
         {activeStep === steps.length ? (
           <React.Fragment>
             <Typography sx={{ mt: 2, mb: 1 }}>
@@ -60,7 +60,7 @@ export default function Checkout() {
           </React.Fragment>
         ) : (
           <React.Fragment>
-            <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
+            {/* <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
               <Button
                 color="inherit"
                 disabled={activeStep === 0}
@@ -69,7 +69,7 @@ export default function Checkout() {
               >
                 Back
               </Button>
-            </Box>
+            </Box> */}
 
             <div className="mt-10">
               {step == 2 ? <DeliveryAddressForm /> : <OrderSummary />}

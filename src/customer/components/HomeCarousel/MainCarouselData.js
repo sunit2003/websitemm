@@ -1,9 +1,11 @@
 export const MainCarouselData = [
   {
-    Image: "bannerher.png",
+    Image:
+      "https://github.com/sunit2003/MoonMadeDatabase/blob/main/bannerher.png?raw=true",
   },
   {
-    Image: "bannerhim.png",
+    Image:
+      "https://github.com/sunit2003/MoonMadeDatabase/blob/main/bannerhim.png?raw=true",
   },
   // {
   //   Image: "bannerval.png",

@@ -34,9 +34,9 @@ export default function Product() {
   const sizeValue = searchParams.get("size");
   const priceValue = searchParams.get("price");
   const discount = searchParams.get("discount");
-  // const sortValue = searchParams.get("sort");
+  const sortValue = searchParams.get("sort");
   const pageNumber = searchParams.get("page") || 1;
-  // const stock = searchParams.get("stock");
+  const stock = searchParams.get("stock");
 
   const handlePaginationChange = (event, value) => {
     const searchParams = new URLSearchParams(location.search);
@@ -75,10 +75,10 @@ export default function Product() {
       minPrice,
       maxPrice,
       minDiscount: discount || 0,
-      // sort: sortValue || "price_low",
+      sort: sortValue || "price_low",
       pageNumber: pageNumber - 1,
       pageSize: 20,
-      // stock: stock,
+      stock: stock,
     };
     dispatch(findProducts(data));
   }, [
@@ -88,10 +88,12 @@ export default function Product() {
     sizeValue,
     priceValue,
     discount,
-    // sortValue,
+    sortValue,
     pageNumber,
-    // stock,
+    stock,
   ]);
+
+  console.log("products", products);
 
   return (
     <div className="bg-[#dfdcd8]">
@@ -139,7 +141,6 @@ export default function Product() {
                       <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                     </button>
                   </div>
-
                   {/* Filters */}
                   <form className="mt-4 border-t border-[#3a2823]">
                     {filters.map((section) => (
@@ -205,7 +206,6 @@ export default function Product() {
             </div>
           </Dialog>
         </Transition.Root>
-
         <main className="mx-auto px-4 sm:px-6 lg:px-12">
           <div className="flex items-baseline justify-between border-b border-[#3a2823] pb-6 pt-5">
             <h1 className="text-4xl font-[cinzel] font-semibold tracking-tight text-[#3a2823]">
@@ -270,7 +270,7 @@ export default function Product() {
                 className="-m-2 ml-4 p-2 text-[#3a2823] hover:text-gray-500 sm:ml-6 lg:hidden"
                 onClick={() => setMobileFiltersOpen(true)}
               >
-                <span className="sr-only">Filters</span>
+                <span className="hidden sr-only">Filters</span>
                 <FunnelIcon className="h-5 w-5" aria-hidden="true" />
               </button>
             </div>
@@ -284,7 +284,7 @@ export default function Product() {
             <div className="grid grid-cols-1 gap-x-8 gap-y-10 select-none lg:grid-cols-5">
               {/* Filters */}
               <div>
-                <div className="pb-7 flex justify-between items-center">
+                <div className="hidden lg:pb-7 lg:flex lg:justify-between lg:items-center">
                   <h1 className="text-lg opacity-75 font-semibold">Filters</h1>
                   <FilterListIcon />
                 </div>
